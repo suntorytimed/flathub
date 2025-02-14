@@ -8,6 +8,8 @@ sdk-extensions:
   - org.freedesktop.Sdk.Extension.node22
 build-options:
   append-path: /usr/lib/sdk/node22/bin
+  env:
+    NPM_CONFIG_LOGLEVEL: info
 command: run.sh
 separate-locales: false
 finish-args:
@@ -16,8 +18,6 @@ finish-args:
   - --socket=x11
   - --device=dri
   - --filesystem=home
-env:
-  NPM_CONFIG_LOGLEVEL: info
 
 add-extensions:
   com.camunda.Modeler.Plugin:
